@@ -5,9 +5,7 @@ import com.fridge.fridgeproject.ingredient.dto.IngredientsReqDto;
 import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,9 +23,15 @@ public class IngredientController {
 
     }
 
-//    @PostMapping("/user/ingredients/create")
-//    public ResponseEntity<CommonResponse> createIngredients(List<IngredientsReqDto> ingredientsReqDtos) {
-//        List<UserIngredient> userIngredients = ingredientService.createIngredients(ingredientsReqDtos);
-//        return new ResponseEntity<>(new CommonResponse(HttpStatus.OK, "Ingredients added!", userIngredients), HttpStatus.OK);
-//    }
+    @PostMapping("/user/ingredients/create")
+    public ResponseEntity<CommonResponse> createIngredients(@RequestBody List<IngredientsReqDto> ingredientsReqDtos) {
+        List<UserIngredient> userIngredients = ingredientService.createIngredients(ingredientsReqDtos);
+        return new ResponseEntity<>(new CommonResponse(HttpStatus.OK, "Ingredients added!", userIngredients), HttpStatus.OK);
+    }
+
+    @DeleteMapping(value = "/user/ingredients/delete", consumes = "application/json")
+    public ResponseEntity<CommonResponse> deleteIngredients(@RequestBody List<IngredientsReqDto> ingredientsReqDtos) {
+        List<UserIngredient> userIngredient = ingredientService.deleteIngredients(ingredientsReqDtos);
+        return new ResponseEntity<>(new CommonResponse(HttpStatus.OK, "Ingredients removed!", userIngredient), HttpStatus.OK);
+    }
 }
