@@ -1,48 +1,44 @@
 package com.fridge.fridgeproject.recipe;
 
 import com.fridge.fridgeproject.ingredient.UserIngredient;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fridge.fridgeproject.ingredient.IngredientService;
 import org.springframework.stereotype.Service;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
+import com.fasterxml.jackson.core.type.TypeReference;
 
 @Service
 public class RecipeService {
 
     private final IngredientService ingredientService;
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     public RecipeService(IngredientService ingredientService) {
         this.ingredientService = ingredientService;
     }
 
-    public String generateRecipes() {
+    public List<Recipe> generateRecipes() {
         try {
-            // Retrieve user ingredients from the service
             List<UserIngredient> userIngredientsList = ingredientService.findMyIngredients();
 
-            // Convert ingredients list to a simple list of strings
             List<String> userIngredients = new ArrayList<>();
             for (UserIngredient ingredient : userIngredientsList) {
-                userIngredients.add(ingredient.getName()); // Assuming 'getName()' method exists
+                userIngredients.add(ingredient.getName()); 
             }
-
-            // Convert list to JSON
             String jsonInput = new com.fasterxml.jackson.databind.ObjectMapper().writeValueAsString(userIngredients);
 
-            // Start the Python process
             ProcessBuilder pb = new ProcessBuilder("python3", "fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/Prompt.py");
-            pb.redirectErrorStream(true);  // Merge error output with standard output
+            pb.redirectErrorStream(true);  
             Process process = pb.start();
 
-            // Send JSON input to Python script
             OutputStream os = process.getOutputStream();
             os.write(jsonInput.getBytes());
             os.flush();
             os.close();
 
-            // Read the combined output (stdout + stderr)
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             StringBuilder output = new StringBuilder();
             String line;
@@ -50,29 +46,24 @@ public class RecipeService {
                 output.append(line).append("\n");
             }
 
-            // Wait for the process to finish
             int exitCode = process.waitFor();
             if (exitCode != 0) {
-                // Capture error message from Python script if it fails
-                return "Error: Python script failed. Output: " + output.toString();
+                return Collections.emptyList();
             }
 
-            // Read the recipe.json file produced by the Python script
-            String outputFilePath = "fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/recipe.json";
-            File outputFile = new File(outputFilePath);
+            String jsonFilePath = "fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/recipe.json";
+            File jsonFile = new File(jsonFilePath);
 
-            if (outputFile.exists()) {
+            if (jsonFile.exists()) {
                 System.out.println("Reading JSON file from Python");
-                String outputContent = new String(Files.readAllBytes(Paths.get(outputFilePath)));
-                return outputContent;
-            } else {
-                return "Error: recipe.json file not found.";
-            }
-
+                String jsonContent = new String(Files.readAllBytes(Paths.get(jsonFilePath)));
+                return objectMapper.readValue(jsonContent, new TypeReference<List<Recipe>>() {});
+        } 
+        return null;
 
         } catch (Exception e) {
             e.printStackTrace();
-            return "Error: Unable to generate recipes.";
+            return Collections.emptyList();
         }
     }
 }

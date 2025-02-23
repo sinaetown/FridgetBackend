@@ -1,7 +1,12 @@
 package com.fridge.fridgeproject.recipe;
 
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.fridge.fridgeproject.common.CommonResponse;
 
 @RestController
 public class RecipeController {
@@ -12,16 +17,9 @@ public class RecipeController {
         this.recipeService = recipeService;
     }
 
-    @GetMapping("/recipe/create")
-    public ResponseEntity<String> generateRecipes() {
-        // Delegate the recipe generation to the service
-        String result = recipeService.generateRecipes();
-        
-        // Return the response
-        if (result.startsWith("Error")) {
-            return ResponseEntity.status(500).body(result);
-        }
-        
-        return ResponseEntity.ok(result);
+    @GetMapping("/recipe/recommend")
+    public List<Recipe> generateRecipes() {
+       List<Recipe> recipes = recipeService.generateRecipes();
+        return recipes;
     }
 }

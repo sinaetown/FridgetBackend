@@ -1,46 +1,52 @@
 [
     {
-        "name": "Apple Pop Smoothie",
-        "description": "A refreshing and fizzy smoothie made with apples and pop.",
+        "name": "Strawberry Apple Salad",
+        "description": "A refreshing salad made with crisp apples and juicy strawberries, perfect for a light snack or a side dish.",
         "nutrition": {
             "calories": "150",
-            "protein": "0g",
-            "carbs": "40g",
-            "fat": "0g",
-            "fiber": "2g",
-            "sugar": "30g",
-            "sodium": "20mg"
+            "protein": "1",
+            "carbs": "38",
+            "fat": "0",
+            "fiber": "6",
+            "sugar": "24",
+            "sodium": "1"
+        },
+        "ingredients": [
+            "1 apple, diced",
+            "1 cup strawberries, sliced",
+            "1 tablespoon honey (optional)",
+            "1 tablespoon lemon juice"
+        ],
+        "steps": [
+            "In a medium bowl, combine the diced apple and sliced strawberries.",
+            "Drizzle with honey and lemon juice, and toss gently to coat.",
+            "Serve immediately or chill for a refreshing treat."
+        ],
+        "reference": "https://www.example.com/strawberry-apple-salad"
+    },
+    {
+        "name": "Fruit Pop Smoothie",
+        "description": "A quick, delicious smoothie that combines fresh fruit with a fizzy twist, perfect for breakfast or a midday snack.",
+        "nutrition": {
+            "calories": "180",
+            "protein": "1",
+            "carbs": "44",
+            "fat": "0",
+            "fiber": "5",
+            "sugar": "32",
+            "sodium": "10"
         },
         "ingredients": [
             "1 apple, cored and chopped",
-            "1 cup of pop (any flavor)"
+            "1 cup strawberries, hulled",
+            "1 cup pop (soda of your choice)",
+            "1/2 cup ice"
         ],
         "steps": [
-            "Add the chopped apple and pop to a blender.",
-            "Blend until smooth and serve immediately."
+            "In a blender, combine the chopped apple and hulled strawberries.",
+            "Add the pop and ice, then blend until smooth.",
+            "Pour into glasses and serve immediately."
         ],
-        "reference": "https://www.example.com/apple-pop-smoothie"
-    },
-    {
-        "name": "Apple Snack Bites",
-        "description": "Simple and healthy apple snacks that are easy to prepare.",
-        "nutrition": {
-            "calories": "95",
-            "protein": "0g",
-            "carbs": "25g",
-            "fat": "0g",
-            "fiber": "4g",
-            "sugar": "20g",
-            "sodium": "1mg"
-        },
-        "ingredients": [
-            "1 apple, sliced",
-            "1/4 cup of peanut butter (or any nut butter as a substitute)"
-        ],
-        "steps": [
-            "Slice the apple into wedges.",
-            "Spread peanut butter on each apple slice and enjoy."
-        ],
-        "reference": "https://www.example.com/apple-snack-bites"
+        "reference": "https://www.example.com/fruit-pop-smoothie"
     }
 ]
