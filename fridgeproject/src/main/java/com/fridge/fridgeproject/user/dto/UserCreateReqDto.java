@@ -17,4 +17,5 @@ public class UserCreateReqDto {
     private int vegeConsumption;
     private List<String> cookingMethod;
     private int spiciness;
+    private List<String> allergies;
 }

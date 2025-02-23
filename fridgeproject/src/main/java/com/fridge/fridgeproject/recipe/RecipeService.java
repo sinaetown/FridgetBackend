@@ -30,8 +30,8 @@ public class RecipeService {
             }
             String jsonInput = new com.fasterxml.jackson.databind.ObjectMapper().writeValueAsString(userIngredients);
 
-            ProcessBuilder pb = new ProcessBuilder("python3", "fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/Prompt.py");
-            pb.redirectErrorStream(true);  
+            ProcessBuilder pb = new ProcessBuilder("python3", "/Users/sinaehong/Downloads/hopperhacks_backend/fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/Prompt.py");
+            pb.redirectErrorStream(true);
             Process process = pb.start();
 
             OutputStream os = process.getOutputStream();
@@ -51,9 +51,8 @@ public class RecipeService {
                 return Collections.emptyList();
             }
 
-            String jsonFilePath = "fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/recipe.json";
+            String jsonFilePath = "/Users/sinaehong/Downloads/hopperhacks_backend/fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/recipe.json";
             File jsonFile = new File(jsonFilePath);
-
             if (jsonFile.exists()) {
                 System.out.println("Reading JSON file from Python");
                 String jsonContent = new String(Files.readAllBytes(Paths.get(jsonFilePath)));

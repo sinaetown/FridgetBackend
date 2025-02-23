@@ -5,7 +5,6 @@ import com.fridge.fridgeproject.ingredient.dto.IngredientsReqDto;
 import com.fridge.fridgeproject.user.User;
 import com.fridge.fridgeproject.user.UserRepository;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.Transient;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

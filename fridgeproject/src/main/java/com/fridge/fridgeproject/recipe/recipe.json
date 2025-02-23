@@ -1,52 +1,55 @@
 [
     {
-        "name": "Strawberry Apple Salad",
-        "description": "A refreshing salad made with crisp apples and juicy strawberries, perfect for a light snack or a side dish.",
+        "name": "Paprika Pork Stir-Fry",
+        "description": "A quick and flavorful stir-fry with pork, paprika, and onions.",
         "nutrition": {
-            "calories": "150",
-            "protein": "1",
-            "carbs": "38",
-            "fat": "0",
-            "fiber": "6",
-            "sugar": "24",
-            "sodium": "1"
+            "calories": "350",
+            "protein": "30g",
+            "carbs": "10g",
+            "fat": "20g",
+            "fiber": "2g",
+            "sugar": "3g",
+            "sodium": "800mg"
         },
         "ingredients": [
-            "1 apple, diced",
-            "1 cup strawberries, sliced",
-            "1 tablespoon honey (optional)",
-            "1 tablespoon lemon juice"
+            "pork",
+            "onion",
+            "paprika",
+            "pepper"
         ],
         "steps": [
-            "In a medium bowl, combine the diced apple and sliced strawberries.",
-            "Drizzle with honey and lemon juice, and toss gently to coat.",
-            "Serve immediately or chill for a refreshing treat."
+            "1. Cut the pork into thin strips and slice the onion.",
+            "2. Heat a pan over medium heat, add some oil, and saut\u00e9 the onions until translucent.",
+            "3. Add the pork strips to the pan and cook until browned.",
+            "4. Sprinkle paprika and pepper over the cooked pork, stir well, and cook for an additional 2-3 minutes.",
+            "5. Serve hot."
         ],
-        "reference": "https://www.example.com/strawberry-apple-salad"
+        "reference": "https://www.foodnetwork.com/recipes/paprika-pork-stir-fry-recipe"
     },
     {
-        "name": "Fruit Pop Smoothie",
-        "description": "A quick, delicious smoothie that combines fresh fruit with a fizzy twist, perfect for breakfast or a midday snack.",
+        "name": "Beef and Pepper Skewers",
+        "description": "Delicious skewers made with juicy beef, peppers, and onions.",
         "nutrition": {
-            "calories": "180",
-            "protein": "1",
-            "carbs": "44",
-            "fat": "0",
-            "fiber": "5",
-            "sugar": "32",
-            "sodium": "10"
+            "calories": "400",
+            "protein": "35g",
+            "carbs": "12g",
+            "fat": "25g",
+            "fiber": "3g",
+            "sugar": "4g",
+            "sodium": "700mg"
         },
         "ingredients": [
-            "1 apple, cored and chopped",
-            "1 cup strawberries, hulled",
-            "1 cup pop (soda of your choice)",
-            "1/2 cup ice"
+            "beef",
+            "onion",
+            "pepper"
         ],
         "steps": [
-            "In a blender, combine the chopped apple and hulled strawberries.",
-            "Add the pop and ice, then blend until smooth.",
-            "Pour into glasses and serve immediately."
+            "1. Cut the beef into cubes and chop the onion and pepper into large pieces.",
+            "2. Thread beef, onion, and pepper onto skewers, alternating between ingredients.",
+            "3. Season with salt, pepper, and a sprinkle of paprika for added flavor.",
+            "4. Grill on medium heat for about 10-15 minutes, turning occasionally until the beef is cooked to your liking.",
+            "5. Serve hot alongside a salad or rice."
         ],
-        "reference": "https://www.example.com/fruit-pop-smoothie"
+        "reference": "https://www.allrecipes.com/recipe/203100/beef-and-pepper-skewers/"
     }
 ]

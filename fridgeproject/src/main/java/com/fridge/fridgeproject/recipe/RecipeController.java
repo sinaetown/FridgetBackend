@@ -19,7 +19,7 @@ public class RecipeController {
 
     @GetMapping("/recipe/recommend")
     public List<Recipe> generateRecipes() {
-       List<Recipe> recipes = recipeService.generateRecipes();
+        List<Recipe> recipes = recipeService.generateRecipes();
         return recipes;
     }
 }
