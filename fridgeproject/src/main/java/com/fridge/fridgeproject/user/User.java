@@ -27,6 +27,13 @@ public class User {
 
     private Role role;
 
+    private String vegan;
+    private int meatConsumption;
+    private int fishConsumption;
+    private int vegeConsumption;
+    private List<String> cookingMethod;
+    private int spiciness;
+
     @DBRef
     @Builder.Default
     private List<UserIngredient> userIngredients = new ArrayList<>();
@@ -35,7 +42,14 @@ public class User {
         UserBuilder userBuilder = User.builder();
         userBuilder.name(userCreateReqDto.getName())
                 .userId(userCreateReqDto.getUserId())
-                .userPassword(userCreateReqDto.getUserPassword());
+                .userPassword(userCreateReqDto.getUserPassword())
+                .role(userCreateReqDto.getRole())
+                .vegan(userCreateReqDto.getVegan())
+                .meatConsumption(userCreateReqDto.getMeatConsumption())
+                .fishConsumption(userCreateReqDto.getFishConsumption())
+                .vegeConsumption(userCreateReqDto.getVegeConsumption())
+                .cookingMethod(userCreateReqDto.getCookingMethod())
+                .spiciness(userCreateReqDto.getSpiciness());
         if (userCreateReqDto.getRole() == null) {
             userBuilder.role(Role.USER);
         } else {

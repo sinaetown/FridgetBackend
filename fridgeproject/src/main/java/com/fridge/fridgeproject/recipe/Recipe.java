@@ -1,6 +1,5 @@
 package com.fridge.fridgeproject.recipe;
 
-
 import java.io.*;
 
 public class Recipe {

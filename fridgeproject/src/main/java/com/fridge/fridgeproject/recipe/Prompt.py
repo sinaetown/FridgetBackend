@@ -1,9 +1,14 @@
 import openai
 import json
 import re
+import sys
 
 OPENAI_API_KEY = "sk-882TXyUTZEIIQpiNLjjFczS4cHeHVDyS3RxnMrcyqGT3BlbkFJP50yt0DukdrwbloOWNlly-H0nPDyjMAn_S7K36NKYA"
 client = openai.OpenAI(api_key=OPENAI_API_KEY)
+
+# Read user ingredients passed from Java
+input_data = sys.stdin.read()  # Read JSON input from stdin
+user_ingredients = json.loads(input_data)  # Convert JSON string to list
 
 recipe_form = {
     "name": "Recipe Name",
@@ -28,10 +33,10 @@ recipe_form = {
     "reference": "Recipe reference website url"
 }
 
-user_ingredients = {
-    "chicken", "tomato", "tofu", "onion", "garlic", "beef", "potato", "carrot",
-    "sugar", "red pepper powder", "salt", "sesame oil", "cooking oil"
-}
+# user_ingredients = [
+#     "chicken", "tomato", "tofu", "onion", "garlic", "beef", "potato", "carrot",
+#     "sugar", "red pepper powder", "salt", "sesame oil", "cooking oil"
+# ]
 
 prompt = f"""
 You have access to a list of ingredients currently available in a user's refrigerator.
@@ -62,7 +67,6 @@ def get_recipes(ingredients):
 
     recipe_data = response.choices[0].message.content
     recipe_data = re.sub(r"```json\n(.*?)\n```", r"\1", recipe_data, flags=re.DOTALL).strip()
-    print(recipe_data[:50])
 
     try:
         recipes = json.loads(recipe_data)

@@ -58,11 +58,9 @@ public class UserController {
     @PostMapping("/doLogout")
     public ResponseEntity<CommonResponse> logout(@RequestBody Map<String, String> request) {
         String accessToken = request.get("token");
-
         Claims claims = jwtTokenProvider.getClaims(accessToken);
         String userId = claims.getSubject();
         refreshTokenService.deleteRefreshToken(userId);
-
         return new ResponseEntity<>(new CommonResponse(HttpStatus.OK, "Logout Success", null), HttpStatus.OK);
     }
 
