@@ -5,7 +5,7 @@ import java.io.*;
 public class Recipe {
     public static void main(String[] args) {
         try {
-            ProcessBuilder pb = new ProcessBuilder("python3", "hopperhacks_backend/hopperhacks_backend/fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/Prompt.py");
+            ProcessBuilder pb = new ProcessBuilder("python3", "fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/Prompt.py");
             pb.redirectErrorStream(true); // Merge error output with standard output
             Process process = pb.start();
 

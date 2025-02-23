@@ -78,7 +78,7 @@ def get_recipes(ingredients):
 
 recipes = get_recipes(user_ingredients)
 if recipes:
-    with open("hopperhacks_backend/hopperhacks_backend/fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/recipe.json", "w") as f:
+    with open("fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/recipe.json", "w") as f:
         json.dump(recipes, f, indent=4)
 
     # Print summary

@@ -1,50 +1,46 @@
 [
     {
         "name": "Apple Pop Smoothie",
-        "description": "A refreshing smoothie made with apples and soda for a fizzy twist.",
+        "description": "A refreshing and fizzy smoothie made with apples and pop.",
         "nutrition": {
             "calories": "150",
             "protein": "0g",
-            "carbs": "35g",
+            "carbs": "40g",
             "fat": "0g",
-            "fiber": "3g",
+            "fiber": "2g",
             "sugar": "30g",
-            "sodium": "5mg"
+            "sodium": "20mg"
         },
         "ingredients": [
-            "1 apple, chopped",
-            "1 cup pop (any soda)"
+            "1 apple, cored and chopped",
+            "1 cup of pop (any flavor)"
         ],
         "steps": [
-            "Chop the apple into small pieces.",
-            "In a blender, combine the chopped apple and pop.",
+            "Add the chopped apple and pop to a blender.",
             "Blend until smooth and serve immediately."
         ],
         "reference": "https://www.example.com/apple-pop-smoothie"
     },
     {
-        "name": "Apple Soda Salad",
-        "description": "A unique salad that combines the sweetness of apples with the fizz of soda.",
+        "name": "Apple Snack Bites",
+        "description": "Simple and healthy apple snacks that are easy to prepare.",
         "nutrition": {
-            "calories": "120",
-            "protein": "1g",
-            "carbs": "28g",
+            "calories": "95",
+            "protein": "0g",
+            "carbs": "25g",
             "fat": "0g",
-            "fiber": "3g",
-            "sugar": "25g",
-            "sodium": "10mg"
+            "fiber": "4g",
+            "sugar": "20g",
+            "sodium": "1mg"
         },
         "ingredients": [
-            "1 apple, diced",
-            "1 cup pop (any soda)",
-            "Optional: chopped nuts for crunch"
+            "1 apple, sliced",
+            "1/4 cup of peanut butter (or any nut butter as a substitute)"
         ],
         "steps": [
-            "Dice the apple into small cubes.",
-            "In a bowl, toss the diced apple with the pop.",
-            "If desired, add chopped nuts for extra crunch.",
-            "Serve chilled."
+            "Slice the apple into wedges.",
+            "Spread peanut butter on each apple slice and enjoy."
         ],
-        "reference": "https://www.example.com/apple-soda-salad"
+        "reference": "https://www.example.com/apple-snack-bites"
     }
 ]

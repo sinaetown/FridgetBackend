@@ -32,7 +32,7 @@ public class RecipeService {
             String jsonInput = new com.fasterxml.jackson.databind.ObjectMapper().writeValueAsString(userIngredients);
 
             // Start the Python process
-            ProcessBuilder pb = new ProcessBuilder("python3", "hopperhacks_backend/hopperhacks_backend/fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/Prompt.py");
+            ProcessBuilder pb = new ProcessBuilder("python3", "fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/Prompt.py");
             pb.redirectErrorStream(true);  // Merge error output with standard output
             Process process = pb.start();
 
@@ -58,7 +58,7 @@ public class RecipeService {
             }
 
             // Read the recipe.json file produced by the Python script
-            String outputFilePath = "hopperhacks_backend/hopperhacks_backend/fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/recipe.json";
+            String outputFilePath = "fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/recipe.json";
             File outputFile = new File(outputFilePath);
 
             if (outputFile.exists()) {
