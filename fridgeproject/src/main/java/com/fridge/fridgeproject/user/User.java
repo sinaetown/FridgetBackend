@@ -31,7 +31,6 @@ public class User {
     private int meatConsumption;
     private int fishConsumption;
     private int vegeConsumption;
-    private List<String> cookingMethod;
     private int spiciness;
     private List<String> allergies;
 
@@ -49,7 +48,6 @@ public class User {
                 .meatConsumption(userCreateReqDto.getMeatConsumption())
                 .fishConsumption(userCreateReqDto.getFishConsumption())
                 .vegeConsumption(userCreateReqDto.getVegeConsumption())
-                .cookingMethod(userCreateReqDto.getCookingMethod())
                 .spiciness(userCreateReqDto.getSpiciness());
         if (userCreateReqDto.getRole() == null) {
             userBuilder.role(Role.USER);

@@ -1,0 +1,466 @@
+[
+    {
+        "name": "Carrot and Tomato Salad",
+        "description": "A refreshing salad that combines carrots and tomatoes with a light dressing.",
+        "nutrition": {
+            "calories": "100",
+            "protein": "2g",
+            "carbs": "15g",
+            "fat": "4g",
+            "fiber": "3g",
+            "sugar": "5g",
+            "sodium": "200mg"
+        },
+        "ingredients": [
+            {
+                "name": "carrot",
+                "quantity": "100g"
+            },
+            {
+                "name": "tomato",
+                "quantity": "150g"
+            },
+            {
+                "name": "sesame oil",
+                "quantity": "1tbsp"
+            },
+            {
+                "name": "salt",
+                "quantity": "0.25tsp"
+            }
+        ],
+        "steps": [
+            "Step 1: Grate the carrot and cut the tomatoes into wedges.",
+            "Step 2: In a bowl, combine grated carrot and tomato pieces.",
+            "Step 3: Drizzle sesame oil and sprinkle salt over the salad.",
+            "Step 4: Toss well to combine and serve immediately."
+        ],
+        "reference": "https://www.example.com/carrot-tomato-salad"
+    },
+    {
+        "name": "Potato and Carrot Mash",
+        "description": "A simple mashed dish combining potatoes and carrots, creamy and comforting.",
+        "nutrition": {
+            "calories": "200",
+            "protein": "4g",
+            "carbs": "35g",
+            "fat": "7g",
+            "fiber": "5g",
+            "sugar": "2g",
+            "sodium": "300mg"
+        },
+        "ingredients": [
+            {
+                "name": "potato",
+                "quantity": "200g"
+            },
+            {
+                "name": "carrot",
+                "quantity": "100g"
+            },
+            {
+                "name": "salt",
+                "quantity": "0.5tsp"
+            },
+            {
+                "name": "cooking oil",
+                "quantity": "1tbsp"
+            }
+        ],
+        "steps": [
+            "Step 1: Peel and chop the potato and carrot into chunks.",
+            "Step 2: Boil them in salted water until tender (about 15-20 minutes).",
+            "Step 3: Drain and return to pot.",
+            "Step 4: Add cooking oil and mash until smooth.",
+            "Step 5: Adjust salt to taste and serve."
+        ],
+        "reference": "https://www.example.com/potato-carrot-mash"
+    },
+    {
+        "name": "Tofu and Vegetable Stir-Fry",
+        "description": "A light and healthy stir-fry with tofu and assorted vegetables.",
+        "nutrition": {
+            "calories": "250",
+            "protein": "15g",
+            "carbs": "20g",
+            "fat": "15g",
+            "fiber": "4g",
+            "sugar": "2g",
+            "sodium": "500mg"
+        },
+        "ingredients": [
+            {
+                "name": "tofu",
+                "quantity": "200g"
+            },
+            {
+                "name": "onion",
+                "quantity": "50g"
+            },
+            {
+                "name": "carrot",
+                "quantity": "50g"
+            },
+            {
+                "name": "garlic",
+                "quantity": "3g"
+            },
+            {
+                "name": "sesame oil",
+                "quantity": "2tbsp"
+            },
+            {
+                "name": "salt",
+                "quantity": "0.5tsp"
+            }
+        ],
+        "steps": [
+            "Step 1: Cube the tofu into bite-sized pieces.",
+            "Step 2: Chop the onion and carrot, and mince the garlic.",
+            "Step 3: Heat sesame oil in a pan over medium heat.",
+            "Step 4: Add garlic and onion, sauté until transparent.",
+            "Step 5: Add the carrot and tofu, cooking until slightly golden.",
+            "Step 6: Season with salt and cook for another 4 minutes.",
+            "Step 7: Serve hot."
+        ],
+        "reference": "https://www.example.com/tofu-vegetable-stir-fry"
+    },
+    {
+        "name": "Sweet and Sour Tofu",
+        "description": "A delightful dish of crispy tofu combined with a sweet and tangy sauce.",
+        "nutrition": {
+            "calories": "300",
+            "protein": "15g",
+            "carbs": "30g",
+            "fat": "15g",
+            "fiber": "3g",
+            "sugar": "10g",
+            "sodium": "600mg"
+        },
+        "ingredients": [
+            {
+                "name": "tofu",
+                "quantity": "200g"
+            },
+            {
+                "name": "sugar",
+                "quantity": "2tbsp"
+            },
+            {
+                "name": "salt",
+                "quantity": "0.5tsp"
+            },
+            {
+                "name": "sesame oil",
+                "quantity": "1tbsp"
+            },
+            {
+                "name": "cooking oil",
+                "quantity": "1tbsp"
+            }
+        ],
+        "steps": [
+            "Step 1: Cube tofu into small pieces.",
+            "Step 2: Heat cooking oil in a pan over medium heat.",
+            "Step 3: Add the tofu and fry until golden brown.",
+            "Step 4: In a small bowl, mix sugar, salt, and sesame oil.",
+            "Step 5: Pour the mixture over the tofu in the pan.",
+            "Step 6: Cook for an additional 2 minutes, stirring to coat.",
+            "Step 7: Serve immediately."
+        ],
+        "reference": "https://www.example.com/sweet-sour-tofu"
+    },
+    {
+        "name": "Garlic Roasted Chicken with Carrots",
+        "description": "Oven-roasted chicken infused with garlic and served with carrots.",
+        "nutrition": {
+            "calories": "400",
+            "protein": "35g",
+            "carbs": "15g",
+            "fat": "25g",
+            "fiber": "3g",
+            "sugar": "4g",
+            "sodium": "600mg"
+        },
+        "ingredients": [
+            {
+                "name": "chicken",
+                "quantity": "300g"
+            },
+            {
+                "name": "carrot",
+                "quantity": "100g"
+            },
+            {
+                "name": "garlic",
+                "quantity": "5g"
+            },
+            {
+                "name": "salt",
+                "quantity": "1tsp"
+            },
+            {
+                "name": "cooking oil",
+                "quantity": "2tbsp"
+            }
+        ],
+        "steps": [
+            "Step 1: Preheat oven to 200°C (400°F).",
+            "Step 2: Rub chicken with salt and minced garlic.",
+            "Step 3: Chop carrots and add them to a baking dish.",
+            "Step 4: Place chicken on top of carrots and drizzle with cooking oil.",
+            "Step 5: Roast in the oven for 30-35 minutes, until the chicken is cooked through.",
+            "Step 6: Serve with the roasted carrots."
+        ],
+        "reference": "https://www.example.com/garlic-roasted-chicken"
+    },
+    {
+        "name": "Tomato and Tofu Soup",
+        "description": "A light soup made with fresh tomatoes and tofu, perfect for a quick meal.",
+        "nutrition": {
+            "calories": "150",
+            "protein": "10g",
+            "carbs": "18g",
+            "fat": "6g",
+            "fiber": "3g",
+            "sugar": "4g",
+            "sodium": "400mg"
+        },
+        "ingredients": [
+            {
+                "name": "tofu",
+                "quantity": "150g"
+            },
+            {
+                "name": "tomato",
+                "quantity": "200g"
+            },
+            {
+                "name": "onion",
+                "quantity": "50g"
+            },
+            {
+                "name": "garlic",
+                "quantity": "3g"
+            },
+            {
+                "name": "salt",
+                "quantity": "0.5tsp"
+            },
+            {
+                "name": "cooking oil",
+                "quantity": "1tbsp"
+            }
+        ],
+        "steps": [
+            "Step 1: Dice the tofu and chop the onion and tomato.",
+            "Step 2: Heat cooking oil in a pot over medium heat.",
+            "Step 3: Add garlic and onion, sauté until fragrant.",
+            "Step 4: Add diced tomato and cook until soft.",
+            "Step 5: Stir in tofu and season with salt.",
+            "Step 6: Add water to cover the ingredients and let simmer for 10 minutes.",
+            "Step 7: Serve warm."
+        ],
+        "reference": "https://www.example.com/tomato-tofu-soup"
+    },
+    {
+        "name": "Chili Garlic Chicken",
+        "description": "A spicy chicken dish cooked with garlic and red pepper powder, perfect for spice lovers.",
+        "nutrition": {
+            "calories": "380",
+            "protein": "30g",
+            "carbs": "15g",
+            "fat": "25g",
+            "fiber": "2g",
+            "sugar": "1g",
+            "sodium": "800mg"
+        },
+        "ingredients": [
+            {
+                "name": "chicken",
+                "quantity": "250g"
+            },
+            {
+                "name": "garlic",
+                "quantity": "5g"
+            },
+            {
+                "name": "red pepper powder",
+                "quantity": "2tsp"
+            },
+            {
+                "name": "salt",
+                "quantity": "1tsp"
+            },
+            {
+                "name": "cooking oil",
+                "quantity": "2tbsp"
+            }
+        ],
+        "steps": [
+            "Step 1: Cut chicken into bite-sized pieces.",
+            "Step 2: Mince the garlic.",
+            "Step 3: Heat cooking oil in a frying pan over medium heat.",
+            "Step 4: Add garlic and sauté until golden.",
+            "Step 5: Add chicken pieces and cook until no longer pink.",
+            "Step 6: Add red pepper powder and salt, stirring to combine.",
+            "Step 7: Cook for an additional 5 minutes and serve."
+        ],
+        "reference": "https://www.example.com/chili-garlic-chicken"
+    },
+    {
+        "name": "Spicy Chicken Stir-Fry",
+        "description": "A quick and flavorful stir-fry featuring chicken and a medley of vegetables.",
+        "nutrition": {
+            "calories": "350",
+            "protein": "30g",
+            "carbs": "15g",
+            "fat": "20g",
+            "fiber": "2g",
+            "sugar": "3g",
+            "sodium": "600mg"
+        },
+        "ingredients": [
+            {
+                "name": "chicken",
+                "quantity": "200g"
+            },
+            {
+                "name": "onion",
+                "quantity": "100g"
+            },
+            {
+                "name": "garlic",
+                "quantity": "3g"
+            },
+            {
+                "name": "red pepper powder",
+                "quantity": "1tsp"
+            },
+            {
+                "name": "sesame oil",
+                "quantity": "2tbsp"
+            },
+            {
+                "name": "salt",
+                "quantity": "0.5tsp"
+            }
+        ],
+        "steps": [
+            "Step 1: Slice the chicken into strips.",
+            "Step 2: Chop the onion and mince the garlic.",
+            "Step 3: Heat sesame oil in a pan over medium heat.",
+            "Step 4: Add garlic and onion, sauté until fragrant.",
+            "Step 5: Add chicken and cook until browned.",
+            "Step 6: Stir in red pepper powder and salt, mixing well.",
+            "Step 7: Cook for an additional 5 minutes, then serve."
+        ],
+        "reference": "https://www.example.com/spicy-chicken-stir-fry"
+    },
+    {
+        "name": "Vegetable and Tofu Fried Rice",
+        "description": "A quick fried rice made with tofu, vegetables, and seasonings, perfect for using leftover rice.",
+        "nutrition": {
+            "calories": "350",
+            "protein": "15g",
+            "carbs": "50g",
+            "fat": "12g",
+            "fiber": "4g",
+            "sugar": "2g",
+            "sodium": "500mg"
+        },
+        "ingredients": [
+            {
+                "name": "tofu",
+                "quantity": "150g"
+            },
+            {
+                "name": "carrot",
+                "quantity": "50g"
+            },
+            {
+                "name": "onion",
+                "quantity": "50g"
+            },
+            {
+                "name": "garlic",
+                "quantity": "3g"
+            },
+            {
+                "name": "cooking oil",
+                "quantity": "2tbsp"
+            },
+            {
+                "name": "salt",
+                "quantity": "1tsp"
+            },
+            {
+                "name": "seasoned rice (cooked)",
+                "quantity": "300g"
+            }
+        ],
+        "steps": [
+            "Step 1: Cube the tofu and chop the onion and carrot.",
+            "Step 2: Heat cooking oil in a frying pan over medium-high heat.",
+            "Step 3: Add garlic, onion, and carrot, sautéing until soft.",
+            "Step 4: Add tofu and cook until golden brown.",
+            "Step 5: Stir in the cooked rice and salt, mix well.",
+            "Step 6: Cook for another 5 minutes until heated through.",
+            "Step 7: Serve hot."
+        ],
+        "reference": "https://www.example.com/vegetable-tofu-fried-rice"
+    },
+    {
+        "name": "Beef and Potato Stew",
+        "description": "A hearty stew made with tender beef and potatoes, cooked until flavorful.",
+        "nutrition": {
+            "calories": "500",
+            "protein": "40g",
+            "carbs": "30g",
+            "fat": "25g",
+            "fiber": "4g",
+            "sugar": "3g",
+            "sodium": "700mg"
+        },
+        "ingredients": [
+            {
+                "name": "beef",
+                "quantity": "200g"
+            },
+            {
+                "name": "potato",
+                "quantity": "150g"
+            },
+            {
+                "name": "onion",
+                "quantity": "100g"
+            },
+            {
+                "name": "carrot",
+                "quantity": "100g"
+            },
+            {
+                "name": "garlic",
+                "quantity": "3g"
+            },
+            {
+                "name": "salt",
+                "quantity": "1tsp"
+            },
+            {
+                "name": "cooking oil",
+                "quantity": "2tbsp"
+            }
+        ],
+        "steps": [
+            "Step 1: Cut beef into cubes and chop the onion, carrot, and potato.",
+            "Step 2: Heat cooking oil in a pot over medium heat.",
+            "Step 3: Add garlic and onion, sauté until soft.",
+            "Step 4: Add the beef and brown on all sides.",
+            "Step 5: Stir in carrot and potato, combining all ingredients.",
+            "Step 6: Add salt and cover with water, letting it simmer for 30 minutes.",
+            "Step 7: Adjust seasoning to taste and serve."
+        ],
+        "reference": "https://www.example.com/beef-potato-stew"
+    }
+]
