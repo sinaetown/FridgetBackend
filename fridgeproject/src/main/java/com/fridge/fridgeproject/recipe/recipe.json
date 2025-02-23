@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Apple Pop Smoothie",
+        "description": "A refreshing smoothie made with apples and soda for a fizzy twist.",
+        "nutrition": {
+            "calories": "150",
+            "protein": "0g",
+            "carbs": "35g",
+            "fat": "0g",
+            "fiber": "3g",
+            "sugar": "30g",
+            "sodium": "5mg"
+        },
+        "ingredients": [
+            "1 apple, chopped",
+            "1 cup pop (any soda)"
+        ],
+        "steps": [
+            "Chop the apple into small pieces.",
+            "In a blender, combine the chopped apple and pop.",
+            "Blend until smooth and serve immediately."
+        ],
+        "reference": "https://www.example.com/apple-pop-smoothie"
+    },
+    {
+        "name": "Apple Soda Salad",
+        "description": "A unique salad that combines the sweetness of apples with the fizz of soda.",
+        "nutrition": {
+            "calories": "120",
+            "protein": "1g",
+            "carbs": "28g",
+            "fat": "0g",
+            "fiber": "3g",
+            "sugar": "25g",
+            "sodium": "10mg"
+        },
+        "ingredients": [
+            "1 apple, diced",
+            "1 cup pop (any soda)",
+            "Optional: chopped nuts for crunch"
+        ],
+        "steps": [
+            "Dice the apple into small cubes.",
+            "In a bowl, toss the diced apple with the pop.",
+            "If desired, add chopped nuts for extra crunch.",
+            "Serve chilled."
+        ],
+        "reference": "https://www.example.com/apple-soda-salad"
+    }
+]

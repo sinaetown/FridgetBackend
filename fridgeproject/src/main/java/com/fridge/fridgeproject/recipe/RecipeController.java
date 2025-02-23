@@ -4,7 +4,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api")
 public class RecipeController {
 
     private final RecipeService recipeService;
@@ -13,7 +12,7 @@ public class RecipeController {
         this.recipeService = recipeService;
     }
 
-    @GetMapping("/generate-recipes")
+    @GetMapping("/recipe/create")
     public ResponseEntity<String> generateRecipes() {
         // Delegate the recipe generation to the service
         String result = recipeService.generateRecipes();

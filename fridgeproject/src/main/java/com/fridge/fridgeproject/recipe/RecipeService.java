@@ -4,6 +4,8 @@ import com.fridge.fridgeproject.ingredient.UserIngredient;
 import com.fridge.fridgeproject.ingredient.IngredientService;
 import org.springframework.stereotype.Service;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 @Service
@@ -30,7 +32,7 @@ public class RecipeService {
             String jsonInput = new com.fasterxml.jackson.databind.ObjectMapper().writeValueAsString(userIngredients);
 
             // Start the Python process
-            ProcessBuilder pb = new ProcessBuilder("python3", "/fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/Prompt.py");
+            ProcessBuilder pb = new ProcessBuilder("python3", "hopperhacks_backend/hopperhacks_backend/fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/Prompt.py");
             pb.redirectErrorStream(true);  // Merge error output with standard output
             Process process = pb.start();
 
@@ -40,22 +42,33 @@ public class RecipeService {
             os.flush();
             os.close();
 
-            // Read Python output (recipe data)
+            // Read the combined output (stdout + stderr)
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             StringBuilder output = new StringBuilder();
             String line;
             while ((line = reader.readLine()) != null) {
-                output.append(line);
+                output.append(line).append("\n");
             }
 
             // Wait for the process to finish
             int exitCode = process.waitFor();
             if (exitCode != 0) {
-                return "Error: Python script failed.";
+                // Capture error message from Python script if it fails
+                return "Error: Python script failed. Output: " + output.toString();
             }
 
-            // Return the response from Python script
-            return output.toString();
+            // Read the recipe.json file produced by the Python script
+            String outputFilePath = "hopperhacks_backend/hopperhacks_backend/fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/recipe.json";
+            File outputFile = new File(outputFilePath);
+
+            if (outputFile.exists()) {
+                System.out.println("Reading JSON file from Python");
+                String outputContent = new String(Files.readAllBytes(Paths.get(outputFilePath)));
+                return outputContent;
+            } else {
+                return "Error: recipe.json file not found.";
+            }
+
 
         } catch (Exception e) {
             e.printStackTrace();
