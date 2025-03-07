@@ -2,7 +2,7 @@ import openai
 import json
 import re
 
-OPENAI_API_KEY = "sk-882TXyUTZEIIQpiNLjjFczS4cHeHVDyS3RxnMrcyqGT3BlbkFJP50yt0DukdrwbloOWNlly-H0nPDyjMAn_S7K36NKYA"
+OPENAI_API_KEY = ""
 client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
 recipe_form = {
