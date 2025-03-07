@@ -2,10 +2,9 @@
 **AI-Powered Recipe Recommendation Website**
 <br>**AI 기반 레시피 추천 웹사이트**
 
-- 🔎 Check the [frontend repository](https://github.com/sinaetown/Fridget_Frontend.git) to see the frontend implementation.
-- 🔎 프론트엔드 코드 및 구현은 [이 레포지토리](https://github.com/sinaetown/Fridget_Frontend.git)를 참고해주세요.
+- 🔎 Check the [backend repository](https://github.com/sinaetown/Fridget_Backend.git) to see the backend codes.
+- 🔎 백엔드 코드는 [이 레포지토리](https://github.com/sinaetown/Fridget_Backend.git)를 참고해주세요.
 
-  
 ## 🎥 Demo Video
 https://youtu.be/FFFVZ70Mt_E
 
@@ -32,10 +31,10 @@ https://youtu.be/FFFVZ70Mt_E
 ## 🫡 Members
 |-|Name|Role|
 |--|------|---|
-|💡|Samuel Han|Frontend|
-|💎|Hojun Kwak|Frontend|
-|🕯️|Sinae Hong|Backend|
-|⚡️|Hanseung Choi|AI/ML|
+|💡|Samuel Han 한석현|Frontend|
+|💎|Hojun Kwak 곽호준|Frontend|
+|🕯️|Sinae Hong 홍신애|Backend|
+|⚡️|Hanseung Choi 최한승|AI/ML|
 
 ## 🛠️ Tech Stack
 ### Frontend
