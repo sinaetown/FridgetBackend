@@ -30,6 +30,7 @@ public class RecipeService {
             for (UserIngredient ingredient : userIngredientsList) {
                 userIngredients.add(ingredient.getName());
             }
+
             String jsonInput = new com.fasterxml.jackson.databind.ObjectMapper().writeValueAsString(userIngredients);
             ProcessBuilder pb = new ProcessBuilder("python3", "/Users/sinaehong/Downloads/hopperhacks_backend/fridgeproject/src/main/java/com/fridge/fridgeproject/recipe/prompt_v2.py");
             pb.redirectErrorStream(true);
